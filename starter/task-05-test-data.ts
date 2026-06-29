@@ -35,7 +35,7 @@ export type TestCase = {
   name: string;
   status: "passed" | "failed" | "skipped";
 };
-export const testCases = [
+export const testCases: TestCase[] = [
   { id: 1, name: "Login with valid credentials", status: "passed" },
   { id: 2, name: "Login with invalid password", status: "failed" },
   { id: 3, name: "Logout from dashboard", status: "passed" },
